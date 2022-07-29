@@ -1,3 +1,4 @@
 name: Sarah H.Q. Li
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+theme: jekyll-theme-midnight
