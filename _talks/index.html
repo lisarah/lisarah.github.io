@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="article-list">
-  {% for post in paginator.posts %}
-    <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{post.excerpt | strip_html}}</p>
+  {% for conference in paginator.conferences %}
+    <h2><a href="{{conference.url | prepend: site.baseurl}}">{{conference.title}}</a></h2>
+    <p>{{conference.excerpt | strip_html}}</p>
   {% endfor %}
 </div>
 

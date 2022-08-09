@@ -1,4 +1,66 @@
-name: Sarah H.Q. Li
+### your site title here
+
+title: Sarah H.Q. Li
+description: PhD Candidate | University of Washington | sarahli [at] uw [dot] edu
+
+baseurl: /lisarah.github.io #name of GitHub repository
+url: #custom url to be used instead of GitHub repository
+email: sarahli@uw.edu
+
+
+highlighter: rouge
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-theme: minima
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+# Social media links in footer
+#facebook: "#"
+# twitter: varchanaiyer_
+linkedin: lisarah1
+github: lisarah
+researchgate: Sarah-Li-25
+orcid: 0000-0001-5265-8929
+
+highlighter: rouge
+markdown: kramdown
+
+# Tracker
+analytics:
+google_analytics: U G-FRXS9P3W29
+
+#optimization -> compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+#collection
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-email-protect
+  - jekyll-target-blank
