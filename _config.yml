@@ -3,7 +3,7 @@
 title: Sarah H.Q. Li
 description: PhD Candidate | University of Washington | sarahli [at] uw [dot] edu
 
-baseurl: /index #name of GitHub repository
+baseurl: ""
 url: #custom url to be used instead of GitHub repository
 email: sarahli@uw.edu
 
