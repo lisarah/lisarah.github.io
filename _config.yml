@@ -10,6 +10,7 @@ email: sarahli@uw.edu
 
 highlighter: rouge
 markdown: kramdown
+excerpt_separator: <!--more-->
 
 # Pagination
 paginate: 5

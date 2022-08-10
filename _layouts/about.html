@@ -10,10 +10,11 @@ layout: default
 <p></p>
 {{ content }}
 <p></p>
+ <h1 style="color:#797979"><b>Recent News</b></h1>
 <div class="article-list">
   {% for post in paginator.posts %}
-    <h3> <small>{{post.date | date: '%B %d, %Y'}}</small> | <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
-    {{post.excerpt | strip_html}}
+    <post_header  style="color:#e1ad01"> <small>[{{post.date | date: '%B %d, %Y'}}]</small> &nbsp; <a class ="post_title" href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></post_header>
+    {{post.excerpt | strip_html}}<br>
   {% endfor %}
 </div>
 

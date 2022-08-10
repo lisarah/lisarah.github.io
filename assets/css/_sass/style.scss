@@ -28,9 +28,17 @@ h1,h2,h3,h4,h5,h6 {
   text-transform: inherit;
 }
 
+post_header {
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.8;
+  margin: 0;
+  color: $brand-color;
+}
 
 a {
   color: $brand-color;
+  font-weight: 150;
   text-decoration: none;
   &:hover{
     color: $text-color;
@@ -42,6 +50,37 @@ a {
   }
 }
 
+a.post_title {
+  color: $brand-color;
+  text-decoration: none;
+  font-size: $base-font-size;
+  &:hover{
+    color: $text-color;
+
+    @media (prefers-color-scheme: dark) {
+      color: $text-color-dark;
+    }
+
+  }
+}
+
+a.nav_bar {
+  font-weight: 500;
+  color: $brand-color;
+  text-decoration: none;
+  font-size: $navigation-font-size;
+  &:link { 
+  text-decoration: none;
+  }
+  &:hover{
+    color: $text-color;
+
+    @media (prefers-color-scheme: dark) {
+      color: $text-color-dark;
+    }
+
+  }
+}
 
 
 p a {
