@@ -20,6 +20,8 @@ body {
   }
 }
 
+
+
 h1,h2,h3,h4,h5,h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
@@ -34,6 +36,12 @@ post_header {
   line-height: 1.8;
   margin: 0;
   color: $brand-color;
+}
+
+h_text {
+  color: #47cb6f;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 a {
