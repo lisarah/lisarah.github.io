@@ -17,6 +17,13 @@ paginate: 5
 # permalink: /blog/:year/:title/
 paginate_path: /page:num/
 
+# google scholar
+
+scholar:
+  order: ascending
+  bibliography_template: bib
+  repository: publications
+
 # Social media links in footer
 #facebook: "#"
 # twitter: varchanaiyer_
@@ -65,3 +72,5 @@ plugins:
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-target-blank
+  - jekyll-scholar
+  # - jekyll-scholar-extras

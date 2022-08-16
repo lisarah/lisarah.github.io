@@ -1,0 +1,39 @@
+---
+---
+{{reference}}
+    {% if entry.abstract %}
+    <button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" style="outline:dotted;">Abstract</button>
+    {% endif %}
+
+    <button class="btn btnId btnPub--BibTex" id="b_{{key}}-bibtex" style="display:outline;border:none;background-color:#60c17d;color:white;" onclick="toggle_bibtex(this.id)">BibTeX</button>
+    
+    {% if link %}
+    <a href="{{link}}"><button class="btn btnId btnPub--download" style="display:outline;border:none;background-color:#797979;color:white;position:relative;white-space: normal;">PDF</button></a>
+    {% endif %}
+    
+    {% if links['sup.pdf'] %}
+    <a href="{{links['sup.pdf']}}"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
+    {% endif %}
+
+    <div class="dropDownBibtex" id="{{key}}-bibtex" style="display:none;" >
+    <pre>{{entry.bibtex}}</pre>
+    </div>
+    
+    <div class="dropDownAbstract" id="{{key}}-abstract">
+    {{entry.abstract}}
+    </div>
+
+<script>
+function toggle_bibtex(id_og){
+    
+    var ret = id_og.split("_");
+    var id = ret[1];
+
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
