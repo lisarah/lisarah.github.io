@@ -1,11 +1,11 @@
 ### your site title here
 
 title: Sarah H.Q. Li
-description: PhD Candidate | University of Washington | sarahli [at] uw [dot] edu
+description: Postdoctoral Scholar | ETH Zürich | sarahli@control.ee.ethz [dot] ch
 
 baseurl: ""
 url: #custom url to be used instead of GitHub repository
-email: sarahli@uw.edu
+email: sarahli@control.ee.ethz.ch
 
 
 highlighter: rouge
